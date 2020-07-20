@@ -2,7 +2,7 @@
 
 try
 {
-  $pdo = new PDO('mysql:host=localhost;dbname=josevale_pht_practice', 'josevale_pht_practice_user', 'MyPassword4');
+  $pdo = new PDO('mysql:host=localhost;dbname=josevale_pht_practice', 'josevale_aith', 'myP7ssw0rd');
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $pdo->exec('SET NAMES "utf8"');
 }
