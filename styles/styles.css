@@ -1,0 +1,443 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url(../site_assets/portland_historical_tours.jpg);
+    background-attachment: fixed;
+    color: #666666;
+}
+
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    min-width: 700px;
+    max-width: 1024px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+main {
+    padding: 2em;
+}
+
+header {
+    background-color: #282C2F;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+
+}
+
+header:hover {
+    opacity: 0.9;
+}
+
+h1 {
+    line-height: 200%;
+    background-image: url(../site_assets/logo.png), url(../site_assets/logo.png);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 9.5em;
+    padding-top: 1em;
+    height: 90px;
+    margin-bottom: 0;
+    text-align: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+/*---- Navigation ----*/
+
+nav {
+    text-align: center;
+    font-size: 21pt;
+    background-color: #FFFFFF;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul ul {
+    position: absolute;
+    padding: 0;
+    text-align: left;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+nav ul ul li {
+    border: 1px solid black;
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: #42474B;
+}
+
+/*---- Images ----*/
+
+.tours {
+    width: 100%;
+    height: 350px;
+    background-image: url(../site_assets/portland_historical_tours.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.town {
+    width: 100%;
+    height: 570px;
+    background-image: url(../site_assets/downtown_tour.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.albina {
+    width: 100%;
+    height: 570px;
+    background-image: url(../site_assets/albina_tour.png);
+    background-size: cover;
+}
+
+.historical {
+    color: black;
+    font-size: 1.1em;
+}
+
+.land {
+    width: 100%;
+    height: 570px;
+    background-image: url(../site_assets/landmarks_tour.png);
+    background-size: cover;
+}
+
+.albina_small {
+    height: 300px;
+    width: 300px;
+}
+
+.albina_small:hover {
+    opacity: 0.5;
+}
+
+.downtown_small {
+    height: 300px;
+    width: 300px;
+}
+
+.downtown_small:hover {
+    opacity: 0.5;
+}
+
+.landmarks_small {
+    height: 300px;
+    width: 300px;
+}
+
+.landmarks_small:hover {
+    opacity: 0.9;
+}
+
+.botton {
+    float: right;
+    margin-top: 5em;
+    margin-left: 1em;
+}
+
+.botton:hover {
+    opacity: 0.8;
+}
+
+.botton:active {
+    opacity: 0.8;
+}
+
+/*---- Table ----*/
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid black;
+    color: black;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #D9D9D9;
+}
+
+/*---- Form ----*/
+
+select {
+    float: inherit;
+    display: block;
+    width: 12em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
+label {
+    float: left;
+    display: block;
+    width: 9em;
+    padding-right: 1em;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 2em;
+    border: 1px solid black;
+}
+
+#mySubmit {
+    margin-left: 12em;
+    background-color: white;
+    color: black;
+    border: solid black
+}
+
+#mySubmit:hover {
+    color: white;
+    background-color: black;
+}
+
+#mySubmit:active {
+    color: white;
+    background-color: black;
+}
+
+/*---- Footer ----*/
+
+footer {
+    background-color: #282C2F;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding: 0.1em;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#mobilefoot {
+    display: none;
+}
+
+#desktopfoot {
+    display: inline;
+}
+
+/*---- Tablet Display ----*/
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: none;
+    }
+
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 24pt;
+        padding: 0.4em;
+        background-image: url(../site_assets/logo.png), url(../site_assets/logo.png);
+        background-position: left, right;
+    }
+
+    nav {
+        padding-top: 0.01em;
+        padding-bottom: 0.01em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.3em;
+        font-size: 22pt;
+        text-align: center;
+    }
+
+    nav a:active {
+        background-color: black;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    main {
+        padding: 1em;
+        margin-left: 0;
+        font-size: 100%;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+
+/*---- Mobile Display ----*/
+
+@media only all and (max-width: 768px) {
+
+    h1 {
+        height: 100%;
+        background-image: url(../site_assets/logo.png), url(../site_assets/logo.png);
+        background-repeat: no-repeat;
+        background-position: left, right;
+        font-size: 11pt;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1.1em;
+        border-bottom: 2px solid black;
+    }
+
+    nav a:active {
+        background-color: black;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        padding: 0;
+    }
+
+    main {
+        padding-top: 0em;
+        padding-right: 0.6em;
+        padding-bottom: 0.1em;
+        padding-left: 0.4em;
+    }
+
+    .tours {
+        display: none;
+    }
+
+    .albina {
+        display: none;
+    }
+
+    .town {
+        display: none;
+    }
+
+    .land {
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+        color: blue;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobilefoot {
+        display: inline;
+    }
+
+    #desktopfoot {
+        display: none;
+    }
+
+    footer {
+        padding-top: 0.5em;
+    }
+}
